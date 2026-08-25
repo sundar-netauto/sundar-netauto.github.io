@@ -1,0 +1,50 @@
+baseURL = "https://<your-github-username>.github.io/"
+languageCode = "en-us"
+title = "Sundar's Network & Automation Notes"
+theme = "PaperMod"
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[params]
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
+  defaultTheme = "auto"
+
+  [params.homeInfoParams]
+    Title = "Hi, I'm Sundar 👋"
+    Content = "21 years in network engineering — routing/switching, data center, and now going deep on network automation, MCP, and observability. This is my running notebook: what I'm learning, labs I'm building, and things I wish someone had told me sooner."
+
+[[params.socialIcons]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/sundar-ramanathan"
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/<your-github-username>"
+
+[[menu.main]]
+  name = "Posts"
+  url = "/posts/"
+  weight = 1
+
+[[menu.main]]
+  name = "Tags"
+  url = "/tags/"
+  weight = 2
+
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 3
+
+[taxonomies]
+  tag = "tags"
+  series = "series"
