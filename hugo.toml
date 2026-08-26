@@ -1,4 +1,4 @@
-baseURL = "https://<your-github-username>.github.io/"
+baseURL = "https://sundar-netauto.github.io/"
 languageCode = "en-us"
 title = "Sundar's Network & Automation Notes"
 theme = "PaperMod"
@@ -28,7 +28,7 @@ buildExpired = false
 
 [[params.socialIcons]]
   name = "github"
-  url = "https://github.com/<your-github-username>"
+  url = "https://github.com/sundar-netauto"
 
 [[menu.main]]
   name = "Posts"
