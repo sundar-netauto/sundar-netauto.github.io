@@ -1,9 +1,15 @@
 ---
-title: "A First Look at MCP and Streaming Telemetry, on My Own EVPN/VXLAN Lab"
+title: A First Look at MCP and Streaming Telemetry, on My Own EVPN/VXLAN Lab
 date: 2026-08-25
-draft: false
-tags: ["ansible", "mcp", "telemetry", "gnmi", "evpn-vxlan", "arista"]
-summary: "Three new-to-me things in one afternoon — idempotent Ansible against a real EVPN/VXLAN fabric, a minimal read-only MCP server for network gear, and live gNMI telemetry through Prometheus and Grafana."
+draft: true
+tags:
+  - ansible
+  - mcp
+  - telemetry
+  - gnmi
+  - evpn-vxlan
+  - arista
+summary: Three new-to-me things in one afternoon — idempotent Ansible against a real EVPN/VXLAN fabric, a minimal read-only MCP server for network gear, and live gNMI telemetry through Prometheus and Grafana.
 ---
 
 I've spent 21 years around routers and switches, most of it hands-on with Cisco Nexus data center gear. What I *haven't* done much of, until recently, is treat the network as something code talks to — idempotent config pushes, MCP servers, streaming telemetry instead of polling. This post is a "hi, bye" tour of three things I tried for the first time today, against a real lab rather than slides.
