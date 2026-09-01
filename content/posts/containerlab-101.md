@@ -12,6 +12,8 @@ summary: What containerlab actually is, the handful of commands that matter (dep
 ---
 > Containerlab launches, wires up and manages container-based labs
 
+## Lab 1: A Single Router
+
 Below is a simple `topology definition file` . When deployed it spins up an Arista CEOS router.
 
 ```bash
@@ -49,7 +51,7 @@ devops@netdevops-lab-vm02:~/clab$ sudo containerlab deploy lab01.clab.yaml
 
 > Check your directory to see if you notice any new folders created by containerlab. Inspect the folder. 
 
-Connecting to router
+### Connecting to router
 
 ```bash
 devops@netdevops-lab-vm02:~/clab$ docker exec -it clab-lab01-ceos1 Cli
@@ -88,6 +90,8 @@ Kernel version: 5.15.0-190-generic
 
 
 
+### Tearing It Down
+
 ```bash
 devops@netdevops-lab-vm02:~/clab$ sudo containerlab destroy 
 02:38:41 INFO Using topology file file=lab01.clab.yaml
@@ -99,6 +103,8 @@ devops@netdevops-lab-vm02:~/clab$ sudo containerlab destroy
 02:38:42 INFO Removing SSH config path=/etc/ssh/ssh_config.d/clab-lab01.conf
 ```
 
+
+## Lab 2: Mixing Kinds
 
 Here is another topology
 ```bash
@@ -170,6 +176,8 @@ end
 
 All the way on the top is the name of this lab.  In hindsight, what you looked at is a `topology definition file` , it has .clab.yaml extension. It contains the topology which is a set of nodes and links. 
 
+### Deploying It
+
 Tired of typing the long commands, lets setup alias 
 
 `alias clab="sudo containerlab"`  
@@ -231,6 +239,8 @@ Internal build version: 4.36.2F-49692632.4362F.1
 Image format version: 1.0
 Kernel version: 5.15.0-190-generic
 ```
+
+### Verifying Connectivity
 
 Let's check how the startup config we loaded look like.
 
